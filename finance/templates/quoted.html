@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+    <h1 class="mb-3">Quote</h1>
+
+    <p>A share of {{ quote.symbol }} costs <u class = symbol>{{ quote.price | usd }}</u></p>
+{% endblock %}
